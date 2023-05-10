@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\MyHomeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -20,3 +21,5 @@ Route::get('/', function () {
 Route::get('/home',[HomeController::class,'index'])->name('home');
 Route::get('/info',[HomeController::class,'info']);
 Route::post('/home',[HomeController::class,'store']);
+Route::post('/store',[MyHomeController::class,'store']);
+Route::get('/contact',[MyHomeController::class,'index'])->name('contact');
