@@ -1,5 +1,6 @@
 
 @extends('basic')
-@section('contant')
+{{-- @section('contant') --}}
+@section('article')
 
 @endsection
